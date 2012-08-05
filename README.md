@@ -5,7 +5,7 @@ including the number of rounds that are needed before a player
 wins.
 
 For more info and how to play see the
-[Wikipedia page](http://en.wikipedia.org/wiki/War_(card_game)).
+[Wikipedia page]("http://en.wikipedia.org/wiki/War_(card_game)").
 
 ## Installation
 
