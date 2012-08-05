@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["philbottomley1@gmail.com"]
   gem.description   = %q{Simulator for the War card game.}
   gem.summary       = %q{Simulator for the War card game that outputs the number of rounds until a player wins.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/philbott/war_simulator"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
