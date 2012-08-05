@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "war_simulator"
   gem.require_paths = ["lib"]
   gem.version       = WarSimulator::VERSION
+
+  gem.add_development_dependency 'rspec', '~> 2.11'
 end
