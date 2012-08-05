@@ -15,7 +15,7 @@ For more info and how to play see: http://en.wikipedia.org/wiki/War_(card_game).
 Install it:
 
 ```bash
-gem install war_simulator
+$ gem install war_simulator
 ```
 
 ## Usage
