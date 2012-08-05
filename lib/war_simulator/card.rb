@@ -1,4 +1,4 @@
-module War
+module WarSimulator
   class Card
 
     SUITS = ['S', 'C', 'H', 'D']

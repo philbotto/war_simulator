@@ -17,7 +17,7 @@ Install it:
 
 To run a new simulaton:
 
-    War.simulate
+    WarSimulator.run
 
 Then the number of rounds will be outputted:
 

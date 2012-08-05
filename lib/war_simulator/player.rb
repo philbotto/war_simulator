@@ -1,4 +1,4 @@
-module War
+module WarSimulator
   class Player
 
     attr_accessor :hand

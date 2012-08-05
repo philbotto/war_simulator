@@ -1,4 +1,4 @@
-module War
+module WarSimulator
   class Deck
 
     def self.generate_deck

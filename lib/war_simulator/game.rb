@@ -1,4 +1,4 @@
-module War
+module WarSimulator
   class Game
 
     attr_accessor :player_1, :player_2, :deck

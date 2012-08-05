@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/war/version', __FILE__)
+require File.expand_path('../lib/war_simulator/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Phil Bottomley"]
@@ -13,5 +13,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "war_simulator"
   gem.require_paths = ["lib"]
-  gem.version       = War::VERSION
+  gem.version       = WarSimulator::VERSION
 end
