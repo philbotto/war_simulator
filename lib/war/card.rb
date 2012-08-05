@@ -2,7 +2,7 @@ module War
   class Card
 
     SUITS = ['S', 'C', 'H', 'D']
-    NUMBERS = (1..13).to_a
+    NUMBERS = (2..14).to_a
 
     attr_accessor :suit, :number
 
