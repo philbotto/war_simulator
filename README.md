@@ -11,19 +11,23 @@ For more info and how to play see the
 
 Install it:
 
-    $ gem install war
+    $ gem install war_simulator
 
 ## Usage
 
 To run a new simulaton:
 
-    War.simulatte
+    War.simulate
+
+Then the number of rounds will be outputted:
+
+    => 234
 
 ## Todo
 
 - Improve on specs
-- Account for different amount of players
 - Add ability to use certain range of cards (eg. Ace to 10)
+- Account for more than two players
 
 ## Contributing
 
