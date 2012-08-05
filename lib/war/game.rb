@@ -19,11 +19,11 @@ module War
     end
 
     def simulate
-      round = 0
+      battles = 0
       war_pile = []
 
       until player_has_no_cards?
-        round += 1
+        battles += 1
 
         if @p1_hand.first.number == @p2_hand.first.number
           war_pile << @p1_hand.shift
@@ -48,7 +48,7 @@ module War
         war_pile.flatten!
       end
 
-      round
+      battles
     end
 
     def player_has_no_cards?
