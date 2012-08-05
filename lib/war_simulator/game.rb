@@ -1,7 +1,7 @@
 module WarSimulator
   class Game
 
-    attr_accessor :player_1, :player_2, :deck
+    attr_accessor :p1_hand, :p2_hand, :deck
 
     def initialize
       @deck = Deck.new
