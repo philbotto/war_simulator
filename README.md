@@ -14,7 +14,9 @@ For more info and how to play see: http://en.wikipedia.org/wiki/War_(card_game).
 
 Install it:
 
-    $ gem install war_simulator
+```bash
+gem install war_simulator
+```
 
 ## Usage
 
@@ -26,7 +28,9 @@ WarSimulator.run
 
 Then the number of rounds will be outputted:
 
-    => 234
+```irb
+=> 234
+```
 
 ## Todo
 
