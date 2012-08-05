@@ -1,24 +1,29 @@
-# War
+# War simulator
 
-TODO: Write a gem description
+Simulator for the War card game. Gives a summary of the game
+including the number of rounds that are needed before a player
+wins.
+
+For more info and how to play see the
+[Wikipedia page](http://en.wikipedia.org/wiki/War_(card_game)).
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'war'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it:
 
     $ gem install war
 
 ## Usage
 
-TODO: Write usage instructions here
+To run a new simulaton:
+
+    War.simulatte
+
+## Todo
+
+- Improve on specs
+- Account for different amount of players
+- Add ability to use certain range of cards (eg. Ace to 10)
 
 ## Contributing
 
