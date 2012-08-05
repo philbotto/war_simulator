@@ -20,7 +20,9 @@ Install it:
 
 To run a new simulaton:
 
-    WarSimulator.run
+```ruby
+WarSimulator.run
+```
 
 Then the number of rounds will be outputted:
 
