@@ -1,4 +1,8 @@
 # War simulator
+[![Build Status](https://secure.travis-ci.org/philbott/war_simulator.png?branch=master)][travis] [![Dependency Status](https://gemnasium.com/philbott/war_simulator.png?travis)][gemnasium]
+
+[travis]: http://travis-ci.org/philbott/war_simulator
+[gemnasium]: https://gemnasium.com/philbott/war_simulator
 
 Simulator for the War card game. Gives a summary of the game
 including the number of rounds that are needed before a player
