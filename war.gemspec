@@ -4,8 +4,8 @@ require File.expand_path('../lib/war/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Phil Bottomley"]
   gem.email         = ["philbottomley1@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Simulator for the War card game.}
+  gem.summary       = %q{Simulator for the War card game that outputs the number of rounds until a player wins.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
