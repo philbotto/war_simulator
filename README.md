@@ -4,8 +4,7 @@ Simulator for the War card game. Gives a summary of the game
 including the number of rounds that are needed before a player
 wins.
 
-For more info and how to play see the
-[Wikipedia page]("http://en.wikipedia.org/wiki/War_(card_game)").
+For more info and how to play see: http://en.wikipedia.org/wiki/War_(card_game).
 
 ## Installation
 
