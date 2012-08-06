@@ -7,11 +7,11 @@ describe WarSimulator do
   end
 
   it 'should return integer' do
-      subject.run.should be_an Integer
-    end
+    subject.run.should be_an Integer
+  end
 
-    it 'should be positive' do
-      subject.run.should > 0
-    end
+  it 'should be positive' do
+    subject.run.should > 0
+  end
 
 end
