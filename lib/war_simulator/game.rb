@@ -64,8 +64,8 @@ module WarSimulator
     end
 
     def pick_and_compare
-      p1_pick = @p1_war_cards.sample
-      p2_pick = @p2_war_cards.sample
+      p1_pick = @p1_war_cards.shuffle.first
+      p2_pick = @p2_war_cards.shuffle.first
 
       @war_hold << @p1_war_cards
       @war_hold << @p2_war_cards
