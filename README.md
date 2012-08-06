@@ -34,9 +34,10 @@ Then the number of rounds will be outputted:
 
 ## Todo
 
-- Improve on specs
+- Full game summary
 - Add ability to use certain range of cards (eg. Ace to 10)
 - Account for more than two players
+- Bulk simulations with averages
 
 ## Contributing
 
