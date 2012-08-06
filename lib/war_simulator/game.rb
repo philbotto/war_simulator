@@ -1,16 +1,22 @@
 module WarSimulator
   class Game
 
-    attr_accessor :p1_hand, :p2_hand, :deck
+    WAR_CARDS = 3
+
+    attr_accessor :p1_hand, :p2_hand, :deck, :war_hold
 
     def initialize
       @deck = Deck.new
       @p1_hand = Player.new.hand
       @p2_hand = Player.new.hand
+      @war_hold = []
+      @p1_war_cards = []
+      @p2_war_cards = []
       deal
     end
 
     def deal
+      raise 'Cards already delt' if @deck.cards.nil?
       cut = @deck.cards.each_slice(@deck.cards.count / 2).to_a
       @deck.cards = nil
 
@@ -20,39 +26,77 @@ module WarSimulator
 
     def simulate
       battles = 0
-      war_pile = []
 
       until player_has_no_cards?
         battles += 1
 
         if @p1_hand.first.number == @p2_hand.first.number
-          war_pile << @p1_hand.shift
-          war_pile << @p2_hand.shift
+          @war_hold << @p1_hand.shift
+          @war_hold << @p2_hand.shift
+          setup_war
 
         elsif @p1_hand.first.number > @p2_hand.first.number
           @p1_hand << @p2_hand.shift
           @p1_hand << @p1_hand.shift
-          @p1_hand << war_pile
-          war_pile = []
 
         else
           @p2_hand << @p1_hand.shift
           @p2_hand << @p2_hand.shift
-          @p2_hand << war_pile
-          war_pile = []
 
         end
 
-        @p1_hand.flatten!
-        @p2_hand.flatten!
-        war_pile.flatten!
+        flatten_hands
       end
 
       battles
     end
 
+    def setup_war
+      WAR_CARDS.times do
+        @p1_war_cards << @p1_hand.shift unless @p1_hand.empty? and return
+        @p2_war_cards << @p2_hand.shift unless @p2_hand.empty? and return
+      end
+
+      @p1_war_cards.flatten!
+      @p2_war_cards.flatten!
+
+      pick_and_compare
+    end
+
+    def pick_and_compare
+      p1_pick = @p1_war_cards.sample
+      p2_pick = @p2_war_cards.sample
+
+      @war_hold << @p1_war_cards
+      @war_hold << @p2_war_cards
+
+      @p1_war_cards = []
+      @p2_war_cards = []
+
+      flatten_hands
+
+      if p1_pick.number == p2_pick.number
+        setup_war
+
+      elsif p1_pick.number > p2_pick.number
+        @p1_hand << @war_hold
+        @war_hold = []
+
+      else
+        @p2_hand << @war_hold
+        @war_hold = []
+      end
+
+    end
+
     def player_has_no_cards?
       @p1_hand.count == 0 || @p2_hand.count == 0
+    end
+
+    def flatten_hands
+      @p1_hand.flatten!
+      @p2_hand.flatten!
+      @war_hold.flatten!
     end
 
   end
