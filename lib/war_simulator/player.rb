@@ -3,9 +3,5 @@ module WarSimulator
 
     attr_accessor :hand
 
-    def intialize
-      @hand = []
-    end
-
   end
 end
