@@ -34,7 +34,7 @@ Then the number of rounds will be outputted:
 
 ## Todo
 
-- Full game summary
+- Full html game summary with graphs
 - Add ability to use certain range of cards (eg. Ace to 10)
 - Account for more than two players
 - Bulk simulations with averages
